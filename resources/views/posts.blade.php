@@ -3,7 +3,7 @@
         <flux:heading size="xl" level="1">{{ __('Post') }}</flux:heading>
         <flux:subheading size="lg" class="mb-6">{{ __('Manage your all the posts.') }}</flux:subheading>
         <flux:separator variant="subtle" />
-    </div> 
-    
+    </div>
+
     <livewire:posts.posts />
 </x-layouts.app>

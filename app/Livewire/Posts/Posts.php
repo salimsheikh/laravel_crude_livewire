@@ -23,4 +23,8 @@ class Posts extends Component
     public function reloadPosts(){
         $this->posts = Post::latest()->get();
     }
+
+    public function edit($id){
+        $this->dispatch('editPost',$id);
+    }
 }
