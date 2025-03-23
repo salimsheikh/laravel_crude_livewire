@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Posts\Models;
+namespace App\Livewire\Posts\Modals;
 
 use Livewire\Component;
 use App\Models\Post;
@@ -12,10 +12,11 @@ class PostCreate extends Component
 
     public function render()
     {
-        return view('livewire.posts.models.post-create');
+        return view('livewire.posts.modals.post-create');
     }
 
     public function submit(){
+
         $this->validate([
             'title' => 'required',
             'content' => 'required'

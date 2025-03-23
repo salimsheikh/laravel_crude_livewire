@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Posts\Models;
+namespace App\Livewire\Posts\Modals;
 
 use App\Models\Post;
 use Livewire\Component;
@@ -15,7 +15,7 @@ class PostEdit extends Component
 
     public function render()
     {
-        return view('livewire.posts.models.post-edit');
+        return view('livewire.posts.modals.post-edit');
     }
 
     #[On('editPost')]
@@ -41,6 +41,5 @@ class PostEdit extends Component
         Flux::modal("post-edit")->close();
 
         $this->dispatch('reloadPosts');
-
     }
 }
